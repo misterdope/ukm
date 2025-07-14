@@ -221,8 +221,6 @@
 
   <div class="auth-section">
     <button id="logoutBtn">Logout</button>
-    <button id="loginUserBtn">Login User</button>
-    <button id="loginAdminBtn">Login Admin</button>
     <div id="loginForm">
       <input type="email" id="email" placeholder="Email">
       <input type="password" id="password" placeholder="Password">
@@ -261,8 +259,7 @@
   let currentLoginType = '', selectedUKM = null;
   let currentUserEmail = null;
 
-  const loginUserBtn = document.getElementById('loginUserBtn');
-  const loginAdminBtn = document.getElementById('loginAdminBtn');
+  
   const logoutBtn = document.getElementById('logoutBtn');
   const submitLoginBtn = document.getElementById('submitLoginBtn');
   const loginForm = document.getElementById('loginForm');
@@ -277,7 +274,6 @@
   const penyakitInput = document.getElementById('penyakitInput');
   const emailInput = document.getElementById('emailInput');
 
-  console.log(loginAdminBtn);
 
   submitLoginBtn.onclick = async () => {
     const email = document.getElementById('email').value.trim();
@@ -400,7 +396,6 @@
       if (user.email === 'admin@example.com') {
         window.location.href = 'admin.html';
       } else {
-        loginUserBtn.style.display = 'none';
         logoutBtn.style.display = 'inline-block';
         groupInfo.style.display = 'none';
         filterInput.style.display = 'block';
