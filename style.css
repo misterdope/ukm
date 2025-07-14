@@ -310,3 +310,66 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
+@media (max-width: 800px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .cart-icon {
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .hero-section {
+    padding: 30px 8px;
+    margin: 20px auto;
+    font-size: 1rem;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .product-grid {
+    flex-direction: column;
+    gap: 16px;
+    overflow-x: initial;
+  }
+
+  .product-card {
+    min-width: 0;
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+  .product-card img {
+    height: 150px;
+  }
+
+  .login-box,
+  .modal-content {
+    padding: 12px;
+    max-width: 98vw;
+  }
+
+  footer {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+}
